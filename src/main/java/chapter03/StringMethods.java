@@ -55,7 +55,7 @@ public class StringMethods {
 
         // Method#7 - equals()
         // Method#8 - equalsIgnoreCase()
-        // Note!!! Due to StringPool mechanism those string are the same
+        // Note!!! Due to StringPool mechanism those strings are the same
         System.out.println("String pool nature comparison: " + ("Valentine" == name));
         // Will return false
         System.out.println("String pool isn't used by JVM here: " + (new String("Valentine") == name));
