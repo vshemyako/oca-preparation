@@ -15,5 +15,11 @@ public class BooleanObject {
         // Insane primitive assignments
         float number = 0x01;
         double number2 = 1.3_2e1_0_0;
+
+        final int value = 1000;
+        Character Character = new Character('a');
+        char simpleChar = 65535;
+        System.out.println((int)Character.MAX_VALUE);
+        Float;
     }
 }
