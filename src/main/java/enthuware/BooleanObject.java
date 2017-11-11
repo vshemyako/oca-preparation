@@ -1,5 +1,7 @@
 package enthuware;
 
+import java.util.ArrayList;
+
 /**
  * Boolean class has tricky constructors
  */
@@ -20,6 +22,5 @@ public class BooleanObject {
         Character Character = new Character('a');
         char simpleChar = 65535;
         System.out.println((int)Character.MAX_VALUE);
-        Float;
     }
 }
