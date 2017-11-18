@@ -25,18 +25,22 @@ public class DateTimeFormatterExamples {
         // Let's apply some formatting methods
         // Actually ISO standard is the default which local date and time classes use
         System.out.println();
-        System.out.println(date.format(DateTimeFormatter.ISO_DATE));
-        System.out.println(time.format(DateTimeFormatter.ISO_TIME));
-        System.out.println(dateTime.format(DateTimeFormatter.ISO_DATE_TIME));
+        System.out.println("ISO_DATE " + date.format(DateTimeFormatter.ISO_DATE));
+        System.out.println("BASIC_ISO_DATE " + date.format(DateTimeFormatter.BASIC_ISO_DATE));
+        System.out.println("ISO_LOCAL_TIME " + time.format(DateTimeFormatter.ISO_LOCAL_TIME));
+        System.out.println("ISO_TIME " + time.format(DateTimeFormatter.ISO_TIME));
+        System.out.println("ISO_DATE_TIME " + dateTime.format(DateTimeFormatter.ISO_DATE_TIME));
 
         // Let's use some predefined formatters
         // Long and Full formats are for date/time objects with time zones
         DateTimeFormatter shortDateTime = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
         DateTimeFormatter mediumDateTime = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM);
+        DateTimeFormatter longDateTime = DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG);
 
         System.out.println();
         System.out.println("Short dateTime: " + dateTime.format(shortDateTime));
         System.out.println("Medium dateTime: " + dateTime.format(mediumDateTime));
+        System.out.println("Long dateTime: " + date.format(longDateTime));
 
         // It's possible to create your own formatters
         System.out.println();

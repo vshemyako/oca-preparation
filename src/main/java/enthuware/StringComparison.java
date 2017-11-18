@@ -5,6 +5,9 @@ package enthuware;
  */
 public class StringComparison {
 
+    StringComparison() throws Error {
+    }
+
     public static void main(String[] args) {
 
         // PAY ATTENTION!!!!

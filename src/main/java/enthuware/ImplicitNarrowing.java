@@ -17,7 +17,7 @@ public class ImplicitNarrowing {
         byte byteMinFitValue = -128;
         byte byteMaxFitValue = 127;
 
-        // If a value doesn't fit - explicit case is needed
+        // If a value doesn't fit - explicit cast is needed
         byte byteNotFitValue = (byte) -129;
         System.out.println("-129 downcasted to byte: " + byteNotFitValue);
 
@@ -103,5 +103,6 @@ public class ImplicitNarrowing {
         final char finalChar = 100;
         byte charToByte = finalChar;
         short charToShort = finalChar;
+        int charToInt = finalChar;
     }
 }

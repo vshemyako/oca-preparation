@@ -10,7 +10,7 @@ public class ExceptionsPrintingTest {
         try {
             throw new CustomException();
         } catch (CustomException exc) {
-            // Straight exception print just gives up fully-qualified name of an Exception class
+            // Straight exception print just gives us fully-qualified name of an Exception class
             System.out.println(exc);
         }
 

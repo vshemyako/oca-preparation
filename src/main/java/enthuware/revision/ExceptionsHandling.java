@@ -7,7 +7,7 @@ public class ExceptionsHandling {
 
     public static void main(String[] args) {
         try {
-            char foundChar = "Hello".charAt(4);
+            char foundChar = "Hello".charAt(5);
         } catch (IndexOutOfBoundsException exc) {
             System.out.println("Exception was thrown");
         }

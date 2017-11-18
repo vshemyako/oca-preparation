@@ -18,5 +18,40 @@ public class WrapperComparison {
         /*
         System.out.println(byte1 == int1);
         */
+
+        Byte byteWrapper = 10;
+        byteWrapper.byteValue();
+        byteWrapper.shortValue();
+        byteWrapper.intValue();
+        byteWrapper.longValue();
+        byteWrapper.shortValue();
+        byteWrapper.doubleValue();
+
+        Short shortWrapper = 10;
+        shortWrapper.byteValue();
+        shortWrapper.shortValue();
+        shortWrapper.intValue();
+        shortWrapper.longValue();
+        shortWrapper.shortValue();
+        shortWrapper.doubleValue();
+
+        Integer intWrapper = 10;
+        intWrapper.byteValue();
+        intWrapper.shortValue();
+        intWrapper.intValue();
+        intWrapper.longValue();
+        intWrapper.floatValue();
+        intWrapper.doubleValue();
+
+        //direct assignment cannot be done because promotion is done only once
+//        Long longWrapper = 10;
+//        Float floatWrapper = 10;
+//        Double doubleWrapper = 20;
+
+        Long longWrapper = 10L;
+        Float floatWrapper = 10F;
+        Double doubleWrapper = 20D;
+
+        Character charWrapper = 10;
     }
 }
