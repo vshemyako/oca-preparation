@@ -8,4 +8,5 @@
 
 #### The goal is to become well-prepared and successfully path the beforementioned certification exam till the end of the year 2017.  
 #### The repository birthdate is 10.10.2017.
-#### I'll put my final score over here ----> 000%.
+#### I'll put my final score over here ----> 97%.
+#### Preparation is finished, i've successfully passed OCA =).
