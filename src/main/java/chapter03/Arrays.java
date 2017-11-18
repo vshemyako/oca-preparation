@@ -6,12 +6,14 @@ package chapter03;
  */
 public class Arrays {
 
+    final public int number = 10;
+
     public static void main(String[] args) {
 
         // Different ways of array initialization
         // All elements will default to int default value '0'
         int[] firstArray = new int[3];
-        for(int number : firstArray) {
+        for (int number : firstArray) {
             System.out.print(number + " ");
         }
 
@@ -21,6 +23,9 @@ public class Arrays {
 
         // For this purposes anonymous arrays were introduced
         int[] anonymousArray = {1, 2, 3};
+
+        System.out.println();
+        System.out.println("Array comparison " + anonymousArray.equals(secondArray));
 
         // Another crazy syntax
         // Pay attention to the trailing comma ','
@@ -43,16 +48,24 @@ public class Arrays {
         int seventhArray[], eighthArray; // Only seventhArray is actually an array! eighthArray is a plain int variable
 
         // valid, though contain space character
-        int [] ninthArray;
-        int       []tenthArray;
+        int[] ninthArray;
+        int[] tenthArray;
         int[] eleventhArray;
 
         // really crazy stuff
-        int twelfthArray       [];
+        int  []        twelfthArray                        [];
 
         // illegal syntax - to put [] before array type:
         /*
         []double doubleArray;
         */
+
+        // very dangerous stuff!!!!
+        int[][][] twoDarray = {{{1}, {2}}, {{3}, {4}}};
+        Object[] oneDarray = twoDarray;
+
+        do {
+            System.out.println("Yo");
+        } while (false);
     }
 }

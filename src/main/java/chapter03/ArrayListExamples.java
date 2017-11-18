@@ -1,6 +1,7 @@
 package chapter03;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * More convenient approach to store a collection of object is to use resizable array which in java is called ArrayList
@@ -73,5 +74,10 @@ public class ArrayListExamples {
         ArrayList<Integer> copyOfNumbers = new ArrayList<>(numbers);
         System.out.println();
         System.out.println("Is our copied array equal to original one?: " + numbers.equals(copyOfNumbers));
+
+        // Diamond operator
+        List list = new ArrayList<>();  //legal ...
+        // List<> list = new ArrayList(); //illegal
+        // List<> list = new ArrayList<>(); //illegal
     }
 }

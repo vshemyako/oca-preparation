@@ -54,6 +54,7 @@ public class StringBuilderExperiments {
         System.out.println("Final object: " + forthBuilder);
 
         // Method#6 - insert()
+        // String doesn't have corresponding method
         System.out.println();
         StringBuilder fifthBuilder = new StringBuilder("Boss");
         System.out.println("Insert new character at index '0': " + fifthBuilder.insert(0, 'J'));
@@ -64,10 +65,13 @@ public class StringBuilderExperiments {
         System.out.println();
         StringBuilder sixthBuilder = new StringBuilder("Trump");
         System.out.println("Let's delete this guy: " + sixthBuilder.delete(0, sixthBuilder.length()));
+        // More over end index is not limited
+        System.out.println("Let's delete this guy: " + new StringBuilder("Delete me please").delete(0, 777));
 
         // Method#8 - reverse()
         System.out.println();
         StringBuilder seventhBuilder = new StringBuilder("Bob");
         System.out.println("Reverses a string: " + seventhBuilder.reverse());
+        System.out.println(seventhBuilder.toString() == seventhBuilder.toString());
     }
 }
